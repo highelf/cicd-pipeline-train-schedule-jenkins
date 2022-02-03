@@ -5,7 +5,7 @@ pipeline {
       steps{
         ehco 'This is the build step'
         sh './gradlaw build --no-deamon'
-        archiveArtifacts artifact: 'src/trainSchedule.zip'
+        archiveArtifacts artifacts: 'src/trainSchedule.zip'
       }
     }
   }
